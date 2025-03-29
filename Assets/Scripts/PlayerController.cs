@@ -9,6 +9,7 @@ using Vector3 = UnityEngine.Vector3;
 
 public class PlayerController : MonoBehaviour
 {
+   public bool FacingLeft { get { return facingLeft; } set { facingLeft = value; } }
    //Set speed for player
    [SerializeField] private float moveSpeed = 1f;
 
@@ -20,6 +21,8 @@ public class PlayerController : MonoBehaviour
    private Rigidbody2D rb;
    private Animator myAnimator;
    private SpriteRenderer mySpriteRenderer;
+
+   private bool facingLeft = false;
 
    private void Awake() {
       playerControls = new PlayerControls();
@@ -61,8 +64,10 @@ public class PlayerController : MonoBehaviour
       if (mousePos.x < playerScreenPoint.x) {
          //flip player sprite
          mySpriteRenderer.flipX = true;
+         FacingLeft = true;
       } else {
          mySpriteRenderer.flipX = false;
+         FacingLeft = false;
       }
    }
 }
