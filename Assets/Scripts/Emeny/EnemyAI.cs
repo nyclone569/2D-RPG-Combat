@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
+    //Timer that mobs keep roaming at that direction
     [SerializeField] private float roamChangerDirFloat = 5f;
     private enum State {
         Roaming
@@ -33,7 +34,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        StartCoroutine(RoamingRoutine());
+        StartCoroutine(RoamingRoutine());        
     }
 
     // Update is called once per frame
