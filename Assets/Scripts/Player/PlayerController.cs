@@ -7,10 +7,9 @@ using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
    public bool FacingLeft { get { return facingLeft; } }
-   public static PlayerController Instance;
    //Set speed for player
    [SerializeField] private float moveSpeed = 1f;
    [SerializeField] private float dashSpeed = 4f;
@@ -29,8 +28,9 @@ public class PlayerController : MonoBehaviour
    private bool facingLeft = false;
    private bool isDashing = false;
 
-   private void Awake() {
-      Instance = this;
+   protected override void Awake() {
+      base.Awake();
+
       playerControls = new PlayerControls();
       rb = GetComponent<Rigidbody2D>();
       myAnimator = GetComponent<Animator>();
