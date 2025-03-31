@@ -14,6 +14,8 @@ public class PlayerController : Singleton<PlayerController>
    [SerializeField] private float moveSpeed = 1f;
    [SerializeField] private float dashSpeed = 4f;
    [SerializeField] private TrailRenderer myTrailRenderer;
+   [SerializeField] private Transform weaponCollider;
+   [SerializeField] private Transform slashAnimSpawnPoint;
 
    //Use input actions map to create PlayerControl class and call it 
    private PlayerControls playerControls;
@@ -53,6 +55,14 @@ public class PlayerController : Singleton<PlayerController>
    private void FixedUpdate() {
       AdjustPlayerFacingDirection();
       Move();
+   }
+
+   public Transform GetWeaponCollider(){
+      return weaponCollider;
+   }
+
+   public Transform GetSlashAnimSpawnPoint(){
+      return slashAnimSpawnPoint;
    }
 
    private void PlayerInput(){
