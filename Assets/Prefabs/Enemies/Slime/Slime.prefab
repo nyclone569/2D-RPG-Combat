@@ -255,7 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roamChangerDirFloat: 5
   attackRange: 5
-  enemyType: {fileID: 0}
+  enemyType: {fileID: 7814559740799499886}
   AttackCooldown: 2
   stopMovingWhileAttacking: 0
 --- !u!114 &7814559740799499886

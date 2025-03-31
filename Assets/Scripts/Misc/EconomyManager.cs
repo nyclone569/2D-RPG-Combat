@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
-public class EconomyManager : MonoBehaviour
+public class EconomyManager : Singleton<EconomyManager>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private TMP_Text goldText;
+    private int currentGold = 0;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    const string COIN_AMOUNT_TEXT = "Gold Amount Text";
+    public void UpdateCurrentGold(){
+        currentGold += 1;
+        if(goldText == null){
+            goldText = GameObject.Find(COIN_AMOUNT_TEXT).GetComponent<TMP_Text>();
+        }
+
+        goldText.text = currentGold.ToString("D3");
     }
 }
