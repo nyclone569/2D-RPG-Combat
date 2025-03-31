@@ -37,7 +37,7 @@ public class Pickup : MonoBehaviour
             moveSpeed += accelarationRate;
         } else {
             moveDir = Vector3.zero;
-            moveSpeed=0;
+            moveSpeed=0f;
         }
     }
     private void FixedUpdate() {
@@ -85,6 +85,8 @@ public class Pickup : MonoBehaviour
                 break;
             case PickupType.StaminaGlobe:
                 Stamina.Instance.RefreshStamina();
+                break;
+            default:
                 break;
         }
     }

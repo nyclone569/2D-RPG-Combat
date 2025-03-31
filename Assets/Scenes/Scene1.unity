@@ -12433,6 +12433,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roamChangerDirFloat: 5
+  attackRange: 0
+  enemyType: {fileID: 0}
+  AttackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!50 &229717039
 Rigidbody2D:
   serializedVersion: 4
@@ -12778,6 +12782,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roamChangerDirFloat: 5
+  attackRange: 0
+  enemyType: {fileID: 0}
+  AttackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!70 &399205115
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -13115,6 +13123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roamChangerDirFloat: 5
+  attackRange: 0
+  enemyType: {fileID: 0}
+  AttackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!70 &491031982
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -20974,6 +20986,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roamChangerDirFloat: 5
+  attackRange: 0
+  enemyType: {fileID: 0}
+  AttackCooldown: 2
+  stopMovingWhileAttacking: 0
 --- !u!70 &748032684
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -30141,6 +30157,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7073169003981497711, guid: beedddc9324df1b49867f580c058f2d4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7073169003981497711, guid: beedddc9324df1b49867f580c058f2d4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30593,18 +30617,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 844101453337516135, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 4952694513478980464, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
       propertyPath: m_Name
       value: AreaExit
       objectReference: {fileID: 0}
-    - target: {fileID: 8120206959692569865, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a7297ae61a8327e46bf17b97e5ae57a4, type: 2}
     - target: {fileID: 8546876845146073169, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
       propertyPath: m_RootOrder
       value: 6
