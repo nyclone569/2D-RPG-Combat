@@ -49,6 +49,6 @@ public class GrapeProjectile : MonoBehaviour
 
             yield return null;
         }
-        Destroy(gameObject);
+        Destroy(grapeShadow);
     }
 }
