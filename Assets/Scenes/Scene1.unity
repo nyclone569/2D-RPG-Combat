@@ -12432,6 +12432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfec344e907cdb4a99778c844361e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleChangeTime: 2
   roamChangerDirFloat: 2
   attackRange: 0
   enemyType: {fileID: 0}
@@ -12781,6 +12782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfec344e907cdb4a99778c844361e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleChangeTime: 2
   roamChangerDirFloat: 2
   attackRange: 0
   enemyType: {fileID: 0}
@@ -13016,7 +13018,7 @@ Transform:
   m_GameObject: {fileID: 491031973}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.71, y: 8.08, z: -0.050113607}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 831924050}
@@ -13122,6 +13124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfec344e907cdb4a99778c844361e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleChangeTime: 2
   roamChangerDirFloat: 2
   attackRange: 0
   enemyType: {fileID: 0}
@@ -20985,6 +20988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bfec344e907cdb4a99778c844361e61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleChangeTime: 2
   roamChangerDirFloat: 5
   attackRange: 0
   enemyType: {fileID: 0}
@@ -30561,6 +30565,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5017213205418817466, guid: 953e7f834590bc44eb60c4818aa8efe9, type: 3}
+      propertyPath: whiteFlashMat
+      value: 
+      objectReference: {fileID: 2100000, guid: 12f099aa4e8e2184486a086a0e08adc8, type: 2}
     - target: {fileID: 5251409741707513712, guid: 953e7f834590bc44eb60c4818aa8efe9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -30568,6 +30576,14 @@ PrefabInstance:
     - target: {fileID: 5743091226458391871, guid: 953e7f834590bc44eb60c4818aa8efe9, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743091226458391871, guid: 953e7f834590bc44eb60c4818aa8efe9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5743091226458391871, guid: 953e7f834590bc44eb60c4818aa8efe9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5743091226458391871, guid: 953e7f834590bc44eb60c4818aa8efe9, type: 3}
       propertyPath: m_LocalPosition.x

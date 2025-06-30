@@ -8,9 +8,9 @@ public class Destructible : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.GetComponent<DamageSource>() || other.gameObject.GetComponent<Projecttile>()){
+        if (other.gameObject.GetComponent<DamageSource>() || other.gameObject.GetComponent<Projecttile>()) {
             PickupSpawner pickupSpawner = GetComponent<PickupSpawner>();
-            
+
             pickupSpawner?.DropItems();
             Instantiate(destroyVFX, transform.position, Quaternion.identity);
             Destroy(gameObject);

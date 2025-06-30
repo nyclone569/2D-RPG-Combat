@@ -23,12 +23,6 @@ public class EnemyPathfinding : MonoBehaviour
             return;
         }
       rb.MovePosition(rb.position + moveDirection*(moveSpeed*Time.fixedDeltaTime));
-
-      if(moveDirection.x <0){
-            spriteRenderer.flipX =true;
-      } else if (moveDirection.x > 0) {
-        spriteRenderer.flipX =false;
-      }
     }
 
     public void MoveTo(Vector2 targetPosition){

@@ -5738,6 +5738,7 @@ GameObject:
   - component: {fileID: 160581734}
   - component: {fileID: 160581733}
   - component: {fileID: 160581732}
+  - component: {fileID: 160581737}
   m_Layer: 0
   m_Name: Foreground
   m_TagString: Untagged
@@ -10679,6 +10680,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &160581737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160581730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ec7a73e0b8ada418abc3b918c63b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &167394527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11371,7 +11384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6470090386467486384, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.32
+      value: 1.48
       objectReference: {fileID: 0}
     - target: {fileID: 6470090386467486384, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11446,8 +11459,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8900602310090312548, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900602310090312548, guid: 10ba72b123cd733429e425a036b1b60e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.06
+      value: -0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19747,10 +19764,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grape (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2059248418502870950, guid: c87c11d9d5f8f18498b58a0e9bfc4ebf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3676672218127952142, guid: c87c11d9d5f8f18498b58a0e9bfc4ebf, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -21483,10 +21496,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 760290581486205995, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6735199456217663302, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -21530,26 +21539,6 @@ PrefabInstance:
     - target: {fileID: 6735199456217663302, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: restTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: burstCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: bulletMoveSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: timeBetweenBursts
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: projectilesPerBurst
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25874,10 +25863,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost
       objectReference: {fileID: 0}
-    - target: {fileID: 760290581486205995, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6735199456217663302, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -25922,26 +25907,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: restTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: burstCount
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: bulletMoveSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: timeBetweenBursts
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7450427654924129559, guid: b62375ffcd9185744bda8e98fc38d42d, type: 3}
-      propertyPath: projectilesPerBurst
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25958,10 +25923,6 @@ PrefabInstance:
     - target: {fileID: 2059248418502870950, guid: c87c11d9d5f8f18498b58a0e9bfc4ebf, type: 3}
       propertyPath: m_Name
       value: Grape
-      objectReference: {fileID: 0}
-    - target: {fileID: 2059248418502870950, guid: c87c11d9d5f8f18498b58a0e9bfc4ebf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3676672218127952142, guid: c87c11d9d5f8f18498b58a0e9bfc4ebf, type: 3}
       propertyPath: m_RootOrder
