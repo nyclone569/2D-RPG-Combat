@@ -148,7 +148,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2716720039951829501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,4 +164,4 @@ MonoBehaviour:
   moveSpeed: 8
   particleOnHitPrefabVFX: {fileID: 7021289495982742559, guid: f20b2407b78793642accfefcbd2dc7dc, type: 3}
   isEnemyProjectile: 1
-  ProjectileRange: 10
+  projectileRange: 10
