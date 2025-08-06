@@ -11,6 +11,10 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(sceneToLoad);
     }
+    public void PlayClickSFX()
+    {
+        AudioManager.Instance.PlaySFX("Click");
+    }
     public void Quit()
     {
         Debug.Log("Quit Game");

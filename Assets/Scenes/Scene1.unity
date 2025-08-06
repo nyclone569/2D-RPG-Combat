@@ -322,8 +322,8 @@ GameObject:
   - component: {fileID: 47963509}
   - component: {fileID: 47963511}
   - component: {fileID: 47963510}
-  - component: {fileID: 47963513}
   - component: {fileID: 47963512}
+  - component: {fileID: 47963513}
   - component: {fileID: 47963514}
   m_Layer: 0
   m_Name: Canopy
@@ -27728,7 +27728,7 @@ MonoBehaviour:
   SFXSource: {fileID: 0}
   menuMusic: {fileID: 8300000, guid: 6647e392092bb6d4bacf5dd7ecc125e7, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 6118223b27ac47d42b415383419363ed, type: 3}
-  slashSFX: {fileID: 8300000, guid: bcc6a675adc9fc74290fe3014b09ea2e, type: 3}
+  sfxDataList: []
 --- !u!4 &2029287413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 692355002115356012, guid: 93f9bb8f992c2774b9aae9cf0d9502f0, type: 3}

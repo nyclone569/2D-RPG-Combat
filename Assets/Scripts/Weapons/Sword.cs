@@ -31,6 +31,7 @@ public class Sword : MonoBehaviour, IWeapon
     public void Attack(){
         // Fire out sword animation
         myAnimator.SetTrigger("Attack");
+        AudioManager.Instance.PlaySFX("SwordSlash");
         weaponCollider.gameObject.SetActive(true);
 
         slashAnim = Instantiate(slashAnimPrefab, slashAnimSpawnPoint.position, Quaternion.identity);

@@ -12,6 +12,7 @@ public class AreaExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.GetComponent<PlayerController>()){
+            AudioManager.Instance.PlaySFX("MapTrans");
             StopAllCoroutines();
             UIFade.Instance.FadeToBlack();
             StartCoroutine(LoadSceneRoutine());

@@ -420,7 +420,21 @@ MonoBehaviour:
   SFXSource: {fileID: 1184949560}
   menuMusic: {fileID: 8300000, guid: 6647e392092bb6d4bacf5dd7ecc125e7, type: 3}
   backgroundMusic: {fileID: 8300000, guid: 6118223b27ac47d42b415383419363ed, type: 3}
-  slashSFX: {fileID: 8300000, guid: bcc6a675adc9fc74290fe3014b09ea2e, type: 3}
+  sfxDataList:
+  - sfxName: Click
+    clip: {fileID: 8300000, guid: b35696532ffce9c4fb30f6ca1864fc81, type: 3}
+  - sfxName: Dash
+    clip: {fileID: 8300000, guid: 6396124e35980b2478414eee0b1df600, type: 3}
+  - sfxName: SwordSlash
+    clip: {fileID: 8300000, guid: 41b99b5ea8848ce4ea8d1aa02c7209f2, type: 3}
+  - sfxName: FireBow
+    clip: {fileID: 8300000, guid: 520f040ee1d891c4bb39387f0c0bc35b, type: 3}
+  - sfxName: MapTrans
+    clip: {fileID: 8300000, guid: 30a38697a6dd4434a9b3ac64d7459ff2, type: 3}
+  - sfxName: EnemyDeath
+    clip: {fileID: 8300000, guid: 7beebdfba928bc24880074e3006031e8, type: 3}
+  - sfxName: PlayerHurt
+    clip: {fileID: 8300000, guid: 75c1e4fa9e371304ab7cd6f21d323fef, type: 3}
 --- !u!1 &207914998
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +966,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1490769518}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: PlayClickSFX
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3129,6 +3155,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1490769518}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: PlayClickSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1655949517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3289,6 +3327,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1490769518}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: PlayClickSFX
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
