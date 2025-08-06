@@ -63,7 +63,7 @@ This is a simple 2D top-down RPG project developed using **Unity** as a way to p
 
   ---
 
-  ## ❗ Not Yet Implemented
+## ❗ Not Yet Implemented
 
 - ❌ Story or narrative system  
 - ❌ Skill tree system
@@ -75,6 +75,7 @@ This is a simple 2D top-down RPG project developed using **Unity** as a way to p
 These features are planned for future development as part of the learning process.
 
 ---
+
 ## 🧠 Purpose of the Project
 
 This is a **free, non-commercial, personal learning project** created to:
@@ -85,6 +86,7 @@ This is a **free, non-commercial, personal learning project** created to:
 - Lay the groundwork for future projects
 
 ---
+
 ## 🙌 Notes
 - I'm still new to game developer, so if you have any suggestion or feedback, feel free to contact me at: 📧 `nyclone569@gmail.com`
 - All assets used in this project are from **free resources** (e.g. [itch.io](https://itch.io), [craftpix.net](https://craftpix.net)), and some lightly edited using **Aseprite**.
