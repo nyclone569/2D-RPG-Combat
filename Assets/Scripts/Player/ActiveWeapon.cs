@@ -18,6 +18,15 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     private void OnEnable() {
         playerControls.Enable();
     }
+    public void DisableCombat()
+    {
+        playerControls.Combat.Disable();
+    }
+
+    public void EnableCombat()
+    {
+        playerControls.Combat.Enable();
+    }
 
     // Start is called before the first frame update
     private void Start()

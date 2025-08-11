@@ -61,7 +61,7 @@ This is a simple 2D top-down RPG project developed using **Unity** as a way to p
   - Enemy death SFX
 - **Volume control sliders** in the settings menu
 
-  ---
+---
 
 ## ❗ Not Yet Implemented
 

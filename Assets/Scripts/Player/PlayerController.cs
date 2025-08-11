@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -51,14 +53,14 @@ public class PlayerController : Singleton<PlayerController>
       PlayerInput();
    }
 
-    private void OnEnable()
-    {
-        playerControls.Enable();
+   public void OnEnable()
+   {
+      playerControls.Enable();
     }
 
-    private void OnDisable()
-    {
-        playerControls.Disable();
+   public void OnDisable()
+   {
+      playerControls.Disable();
     }
 
     private void FixedUpdate() {
@@ -66,7 +68,8 @@ public class PlayerController : Singleton<PlayerController>
       Move();
    }
 
-   public Transform GetWeaponCollider(){
+   public Transform GetWeaponCollider()
+   {
       return weaponCollider;
    }
 

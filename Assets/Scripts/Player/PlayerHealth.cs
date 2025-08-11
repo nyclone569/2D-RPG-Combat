@@ -71,23 +71,40 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
     private void CheckIfPlayerDeath(){
         if (currentHealth <=0 && !IsDead){
-            IsDead=true;
-            Destroy(ActiveWeapon.Instance.gameObject);
-            currentHealth =0;
-            GetComponent<Animator>().SetTrigger(DEATH_HASH);
+            IsDead=true;            
+            currentHealth =0;            
             StartCoroutine(DeathLoadSceneRoutine());
         }
     }
 
-    private IEnumerator DeathLoadSceneRoutine(){
+    private IEnumerator DeathLoadSceneRoutine()
+    {
+        ActiveWeapon.Instance.DisableCombat();
+        canTakeDamage = false;
+        GetComponent<Animator>().SetTrigger(DEATH_HASH);
         yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
         Stamina.Instance.ReplenishStaminaOnDeath();
+        SceneManager.sceneLoaded += OnSceneLoaded;
         SceneManager.LoadScene(SPAWN_TEXT);
     }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        transform.position = Vector3.zero;
+        IsDead = false;
+        canTakeDamage = true;
+        ActiveWeapon.Instance.EnableCombat();
+        currentHealth = maxHealth;
+        UpdateHealthSlider();
+        Animator animator = GetComponent<Animator>();
+        animator.ResetTrigger(DEATH_HASH);
+        animator.Play("Idle");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
-    private void UpdateHealthSlider(){
-        if(healthSlider == null){
+    private void UpdateHealthSlider()
+    {
+        if (healthSlider == null)
+        {
             healthSlider = GameObject.Find(HEALTH_BAR_TEXT).GetComponent<Slider>();
         }
 
