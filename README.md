@@ -33,6 +33,7 @@ This is a simple 2D top-down RPG project developed using **Unity** as a way to p
 - Health bar & stamina slot for player
 - Weapon selection UI (3 weapon icons)
 - Coin counter (basic currency display)
+- Main menu and pause menu in-game
 
 ### 💰 Economy System (Prototype)
 - Coins dropped from:
@@ -42,7 +43,8 @@ This is a simple 2D top-down RPG project developed using **Unity** as a way to p
 
 ### 🎨 Visual Effects
 - **Screen Shake**: Triggered when the player takes damage
-- **Canopy Parallax**: Scrolling background layer (tilemap)
+- **Fade Screen**: Screen fadding before changing map
+- **Canopy Parallax**: Parallax effect between layers when moving
 - **Canopy Transparency**:
   - Tilemaps and environment become transparent when player walks under them
 - **Custom Shaders**:
@@ -59,7 +61,7 @@ This is a simple 2D top-down RPG project developed using **Unity** as a way to p
   - Map transition sound
   - Player hurt SFX
   - Enemy death SFX
-- **Volume control sliders** in the settings menu
+- **Volume control sliders** in the settings menu and pause menu
 
 ---
 
