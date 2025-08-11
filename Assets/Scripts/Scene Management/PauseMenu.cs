@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f; // Pause the game
         ActiveWeapon.Instance.DisableCombat(); // Disable combat controls
+        PlayerController.Instance.OnDisable();
         isPaused = true;
     }
     public void Resume()
@@ -34,6 +35,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f; // Resume the game
         ActiveWeapon.Instance.EnableCombat(); // Enable combat controls
+        PlayerController.Instance.OnEnable();
         isPaused = false;
     }
     public void Menu()
