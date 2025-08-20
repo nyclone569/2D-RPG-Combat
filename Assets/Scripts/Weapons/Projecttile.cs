@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -44,20 +45,22 @@ public class Projecttile : MonoBehaviour
             if ((player && isEnemyProjectile) || (enemyHealth && !isEnemyProjectile))
             {
                 player?.TakeDamage(1, transform);
-                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
-                Destroy(gameObject);
+                // Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                // Destroy(gameObject);
+                LeanPool.Spawn(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                LeanPool.Despawn(gameObject);
             }
             else if (!other.isTrigger && indestructible)
             {
-                Instantiate(particleOnHitPrefabVFX, transform.position, transform.rotation);
-                Destroy(gameObject);
+                LeanPool.Spawn(particleOnHitPrefabVFX, transform.position, transform.rotation);
+                LeanPool.Despawn(gameObject);
             }
         }
     }
 
     private void DetectFireDistance(){
         if(Vector3.Distance(transform.position, startPosition) > projectileRange ){
-            Destroy(gameObject);
+            LeanPool.Despawn(gameObject);
         }
     }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -37,7 +38,8 @@ public class EnemyHealth : MonoBehaviour
     }
 
     private void DetectDeath(){
-        if(currentHealth==0){
+        if (currentHealth == 0)
+        {
             AudioManager.Instance.PlaySFX("EnemyDeath");
             PickupSpawner pickupSpawner = GetComponent<PickupSpawner>();
             pickupSpawner?.DropItems();

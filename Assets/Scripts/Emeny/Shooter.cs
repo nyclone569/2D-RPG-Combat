@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour, IEnemy
@@ -59,7 +60,8 @@ public class Shooter : MonoBehaviour, IEnemy
             for (int j = 0; j < projectilesPerBurst; j++)
             {
                 Vector2 pos = FindBulletSpawnPos(currentAngle);
-                GameObject newBullet = Instantiate(bulletPrefab, pos, Quaternion.Euler(0, 0, currentAngle));
+                // GameObject newBullet = Instantiate(bulletPrefab, pos, Quaternion.Euler(0, 0, currentAngle));
+                GameObject newBullet = LeanPool.Spawn(bulletPrefab, pos, Quaternion.Euler(0, 0, currentAngle));
                 // newBullet.transform.right = newBullet.transform.position - transform.position;
 
                 if (newBullet.TryGetComponent(out Projecttile projecttile))

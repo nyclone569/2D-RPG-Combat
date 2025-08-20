@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 
 public class Bow : MonoBehaviour, IWeapon
@@ -18,7 +19,8 @@ public class Bow : MonoBehaviour, IWeapon
     public void Attack(){
         myAnimator.SetTrigger(FIRE_HASH);
         AudioManager.Instance.PlaySFX("FireBow");
-        GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
+        // GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
+        GameObject newArrow = LeanPool.Spawn(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
         newArrow.GetComponent<Projecttile>().UpdateProjectileRange(weaponInfo.weaponRange);
     }
     public WeaponInfo GetWeaponInfo(){

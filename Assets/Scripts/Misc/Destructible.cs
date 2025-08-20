@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 
 public class Destructible : MonoBehaviour
@@ -8,7 +9,8 @@ public class Destructible : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<DamageSource>() || other.gameObject.GetComponent<Projecttile>()) {
+        if (other.gameObject.GetComponent<DamageSource>() || other.gameObject.GetComponent<Projecttile>())
+        {
             PickupSpawner pickupSpawner = GetComponent<PickupSpawner>();
 
             pickupSpawner?.DropItems();

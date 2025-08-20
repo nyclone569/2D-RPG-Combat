@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 
 public class Grape : MonoBehaviour, IEnemy
@@ -25,7 +26,9 @@ public class Grape : MonoBehaviour, IEnemy
         }
     }
 
-    public void SpawnProjectileAnimEvent(){
-        Instantiate(grapeProjectilePrefab, transform.position, Quaternion.identity);
+    public void SpawnProjectileAnimEvent()
+    {
+        // Instantiate(grapeProjectilePrefab, transform.position, Quaternion.identity);
+        LeanPool.Spawn(grapeProjectilePrefab, transform.position, Quaternion.identity);
     }
 }

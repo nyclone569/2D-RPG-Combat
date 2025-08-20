@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Pool;
 using UnityEngine;
 
 public class Pickup : MonoBehaviour
@@ -48,7 +49,7 @@ public class Pickup : MonoBehaviour
     {
         if (other.gameObject.GetComponent<PlayerController>()){
             DetectPickupType();
-            Destroy(gameObject);
+            LeanPool.Despawn(gameObject);
         }
     }
 
