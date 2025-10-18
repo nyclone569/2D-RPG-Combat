@@ -1,6 +1,7 @@
 # 2D-RPG-Unity
 This is a simple 2D top-down RPG project developed using **Unity** as a way to practice and learn the fundamentals of game development. The project currently includes basic movement and simple combat mechanics, and will be expanded in the future with more features like a story, skill and level system, quests.
 
+You can try my game here: [https://play.unity.com/en/games/2d-rpg-combat-game](https://play.unity.com/en/games/1d7af24b-ddb7-4ed2-a9fd-a98198a2e886/2d-rpg-combat-game)
 ---
 
 ## 📌 Current Features
@@ -91,4 +92,5 @@ This is a **free, non-commercial, personal learning project** created to:
 
 ## 🙌 Notes
 - I'm still new to game developer, so if you have any suggestion or feedback, feel free to contact me at: 📧 `nyclone569@gmail.com`
+
 - All assets used in this project are from **free resources** (e.g. [itch.io](https://itch.io), [craftpix.net](https://craftpix.net)), and some lightly edited using **Aseprite**.
